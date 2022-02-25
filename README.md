@@ -1,6 +1,6 @@
 # Client-Server-Bank-System
 ## 簡介
-目前正在實作一個簡易版的Client-Server Bank System，連線位址均為127.0.0.1(Localhost)。
+目前正在實作一個簡易版的Client-Server Bank System，來源IP Address均為127.0.0.1(Localhost)。
 目標功能:登入、存提款、查詢餘額、轉帳、結束交易，且確保shared data的正確性，及同時接收多位使用者連線(Multithread)。
 
 下列為目前實現的部份:

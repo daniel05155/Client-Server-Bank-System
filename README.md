@@ -1,8 +1,10 @@
 # Client-Server-Bank-System
 ## 簡介
-在Linux System，實作一個簡易版的Client-Server Bank System，來源IP Address均為127.0.0.1(Localhost)。
-欲完成的功能:登入、存提款、查詢餘額、轉帳、結束交易。
-於上述功能之中，需確保共用資料(shared data)的正確性，及同時處理多位使用者的連線與請求。
+- 在Linux System，實作一個簡易版的Client-Server Bank System，來源IP Address均為127.0.0.1(Localhost)。
+- 欲完成的功能:
+  - 登入、存提款、查詢餘額、轉帳、結束交易。
+  - 需保證共用資料(shared data)的正確性
+  - 同時處理多位使用者的連線與請求。
 
 以下為目前已實現的部份:
 

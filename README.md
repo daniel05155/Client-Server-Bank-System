@@ -1,19 +1,23 @@
 # Client-Server-Bank-System
-## 簡介
-- 在Linux System，實作一個簡易版的Client-Server Bank System，來源IP Address均為127.0.0.1(Localhost)。
-- 欲完成的功能:
-  - 登入、存提款、查詢餘額、結束交易(登出)
-  - 確保共用資料(Shared Data)的正確性
-  - 可接收多位使用者的連線與請求  
+### System
+- Ubuntu Desktop 21.10
 
-以下為目前已實現的部份:
+### Programming Language
+- C++ 
 
-| 功能                 | 內容                                                       |
+### Introduction 
+- A simple bank system using C++ in Linux.
+- This system only accepts the localhost(127.0.0.1) as source IP address 
+- It only allows the same user to use it ,but the user can operate at the same time in different places. 
+
+### The Implemented Functions:
+| Name                 | Content                                                      |
 | -------------------- | ---------------------------------------------------------- |
-| 登入、存款、提款、查詢餘額、登出    | 提供一般性帳戶的功能。尚未完成轉帳功能。            |
-| 多執行緒 (Multithread) | 透過Socket的設定及運用Pthread來建立執行緒，達到多位用戶同時使用同個帳戶，實現平行化程式。|
-| 不同人對於同個帳戶，同個時間進行存款與提款，但不會有資料不正確的現象。| 使用 Pthread 的 mutex，實作出critical section 的要求，避免帳戶金額不正確。|
-| 結束交易 | 可以透過 Ctrl-C 發出 Linux Signal的中斷訊號，結束 Client 的執行。 | 
+| Deposit, Withdraw , Balance-Checking     | It offers the basic functions            |
+| Multithreaded System  | By socket programming and Pthread API, it can create multiple threads at the same time to handle the requests for the user. |
+| The consistency of shared resources| By mutex in Pthread API, it can maintain the correctness of the synchronized data.|
+| Logout | The user can send the interrupt signal using Ctr-C to end the transaction. | 
+
 
 呈現上述提及Client-Server Bank System的功能
 1.	Multithread Programming (以三位user使用帳戶為例，分別為程式碼及執行結果)

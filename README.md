@@ -16,7 +16,7 @@
 | Deposit, Withdraw , Balance-Checking     | It offers the basic functions            |
 | Multithreaded System  | By socket programming and Pthread API, it can create multiple threads at the same time to handle the requests for the user. |
 | The consistency of shared resources| By mutex in Pthread API, it can maintain the correctness of the synchronized data.|
-| Logout | The user can send the interrupt signal using Ctr-C to end the transaction. | 
+| Logout | The user can send the interrupt signal using Ctrl-C to end the transaction. | 
 
 
 呈現上述提及Client-Server Bank System的功能
